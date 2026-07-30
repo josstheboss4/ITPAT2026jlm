@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for available properties you may use (like ${platform.*}) and also the -->
+<!-- list of predefined properties in harness/common.xml. -->
+<project name="DojoManager" default="default" basedir=".">
+    <description>Builds, tests, and runs the project DojoManager.</description>
+    <import file="nbproject/build-impl.xml"/>
+</project>

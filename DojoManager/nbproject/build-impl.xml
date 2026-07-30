@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Generated-style NetBeans build file for DojoManager.
+    Keep this file in the project so "Clean and Build" / Run works after cloning.
+-->
+<project name="DojoManager-impl" basedir="..">
+    <property file="nbproject/project.properties"/>
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="build.classes.dir" value="${build.dir}/classes"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="dist.jar" value="${dist.dir}/DojoManager.jar"/>
+    <property name="main.class" value="dojomanager.DojoManagerApp"/>
+    <property name="javac.source" value="8"/>
+    <property name="javac.target" value="8"/>
+    <property name="source.encoding" value="UTF-8"/>
+
+    <target name="default" depends="jar" description="Build the project."/>
+
+    <target name="deps-jar" depends="init"/>
+
+    <target name="init">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+
+    <target name="compile" depends="init" description="Compile Java sources.">
+        <javac srcdir="${src.dir}"
+               destdir="${build.classes.dir}"
+               source="${javac.source}"
+               target="${javac.target}"
+               includeantruntime="false"
+               encoding="${source.encoding}"
+               debug="true"/>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.dir}" excludes="**/*.java"/>
+        </copy>
+    </target>
+
+    <target name="jar" depends="compile" description="Build JAR.">
+        <jar destfile="${dist.jar}" basedir="${build.classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar" description="Run the project.">
+        <java classname="${main.class}" fork="true" classpath="${build.classes.dir}">
+            <classpath>
+                <pathelement path="${build.classes.dir}"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="clean" description="Clean build outputs.">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+    <target name="-pre-init"/>
+    <target name="-post-init"/>
+    <target name="-pre-compile"/>
+    <target name="-post-compile"/>
+    <target name="-pre-jar"/>
+    <target name="-post-jar"/>
+    <target name="-pre-compile-test"/>
+    <target name="-post-compile-test"/>
+</project>

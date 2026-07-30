@@ -1,0 +1,12 @@
+# Ignore NetBeans / Java build output
+DojoManager/build/
+DojoManager/dist/
+DojoManager/nbproject/private/
+DojoManager/dojo_data/
+*.class
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
