@@ -1,12 +1,11 @@
 package dojomanager.gui;
 
 import dojomanager.data.DataManager;
+import dojomanager.util.ImageLoader;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Image;
-import java.io.File;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -32,10 +31,9 @@ public class MainFrame extends JFrame {
         super("Dojo Manager");
         dataManager = new DataManager();
 
-        // Use the black-belt image as the window icon (if it is available)
-        File iconFile = new File("images/belt.png");
-        if (iconFile.exists()) {
-            setIconImage(new ImageIcon(iconFile.getAbsolutePath()).getImage());
+        ImageIcon windowIcon = ImageLoader.loadBeltIcon();
+        if (windowIcon != null) {
+            setIconImage(windowIcon.getImage());
         }
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,14 +53,9 @@ public class MainFrame extends JFrame {
         headerTitle.setForeground(Color.WHITE);
         header.add(headerTitle, BorderLayout.WEST);
 
-        // Small belt icon on the right for consistent branding (with fallback)
-        File headerImg = new File("images/belt.png");
-        if (headerImg.exists()) {
-            ImageIcon rawIcon = new ImageIcon(headerImg.getAbsolutePath());
-            if (rawIcon.getIconWidth() > 0) {
-                Image small = rawIcon.getImage().getScaledInstance(34, 34, Image.SCALE_SMOOTH);
-                header.add(new JLabel(new ImageIcon(small)), BorderLayout.EAST);
-            }
+        ImageIcon headerIcon = ImageLoader.loadBeltIcon(34, 34);
+        if (headerIcon != null) {
+            header.add(new JLabel(headerIcon), BorderLayout.EAST);
         }
         add(header, BorderLayout.NORTH);
 

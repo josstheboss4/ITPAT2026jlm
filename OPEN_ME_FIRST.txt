@@ -1,0 +1,22 @@
+========================================
+  HOW TO USE THIS PROJECT
+========================================
+
+TO RUN THE APP (easiest):
+1. Open the "App" folder
+2. Open the "DojoManager" folder inside it
+3. Double-click DojoManager.exe
+
+No Java install needed. No NetBeans needed.
+Just open the app.
+
+
+FOR SCHOOL / NETBEANS (source code):
+1. Open NetBeans
+2. File -> Open Project
+3. Choose the "DojoManager" folder
+   (the one with src, nbproject, etc.)
+4. Press Run
+
+If NetBeans gives errors, still use the App\DojoManager\DojoManager.exe
+to show the working program.

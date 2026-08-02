@@ -3,13 +3,12 @@ package dojomanager.gui;
 import dojomanager.data.DataManager;
 import dojomanager.model.DojoInfo;
 import dojomanager.model.KarateClass;
+import dojomanager.util.ImageLoader;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
-import java.awt.Image;
-import java.io.File;
 import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -123,13 +122,9 @@ public class HomePanel extends JPanel {
      * @return a label containing the belt image, or a text badge as a fallback
      */
     private JLabel createHeroBadge() {
-        File imgFile = new File("images/belt.png");
-        if (imgFile.exists()) {
-            ImageIcon raw = new ImageIcon(imgFile.getAbsolutePath());
-            if (raw.getIconWidth() > 0) {
-                Image scaled = raw.getImage().getScaledInstance(96, 96, Image.SCALE_SMOOTH);
-                return new JLabel(new ImageIcon(scaled));
-            }
+        ImageIcon icon = ImageLoader.loadBeltIcon(96, 96);
+        if (icon != null) {
+            return new JLabel(icon);
         }
         JLabel badge = new JLabel("  DOJO  ", SwingConstants.CENTER);
         badge.setFont(new Font("Segoe UI", Font.BOLD, 12));

@@ -3,3 +3,4 @@
 /nbproject/private/
 /dojo_data/
 *.class
+# Keep DojoManager.jar in the repo so she can run without compiling

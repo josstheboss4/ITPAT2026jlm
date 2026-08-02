@@ -10,3 +10,7 @@ DojoManager/dojo_data/
 Thumbs.db
 *.tmp
 *.log
+
+packaging/
+DojoManager/build/
+
