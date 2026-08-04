@@ -1,0 +1,84 @@
+========================================
+  HOW TO PULL AND RUN (READ THIS)
+========================================
+
+Follow these steps on your laptop so the project
+works for presenting.
+
+
+STEP 1 — Open your project folder
+---------------------------------
+Open the folder where you already cloned the repo
+(for example: ITPAT2026jlm).
+
+If you never cloned it yet, open Git Bash / Command
+Prompt and run:
+
+  git clone https://github.com/josstheboss4/ITPAT2026jlm.git
+
+Then open the new ITPAT2026jlm folder.
+
+
+STEP 2 — Pull the latest master
+-------------------------------
+Inside that folder, run:
+
+  git checkout master
+  git pull
+
+
+STEP 3 — Check the database / test data is there
+------------------------------------------------
+In File Explorer, open these folders and confirm
+you can see the .dat files:
+
+  App\DojoManager\dojo_data\
+  DojoManager\dojo_data\
+
+You should see:
+  students.dat
+  classes.dat
+  dojo_info.dat
+
+Those files ARE the database / test data.
+
+
+STEP 4 — Run for presenting (easiest)
+-------------------------------------
+1. Open the App folder
+2. Open the DojoManager folder inside it
+3. Double-click DojoManager.exe
+
+No Java needed. No NetBeans needed.
+Sample students and classes should already show.
+
+
+STEP 5 — NetBeans (only if teacher wants source)
+------------------------------------------------
+1. Open NetBeans
+2. File -> Open Project
+3. Choose the DojoManager folder
+   (the one with src and nbproject)
+4. Press Run
+
+OR double-click:
+  DojoManager\Start Dojo Manager.bat
+  (needs Java installed)
+
+
+IF ANYTHING LOOKS WRONG
+-----------------------
+- Prefer the EXE for the demo:
+    App\DojoManager\DojoManager.exe
+- Database for the EXE is here:
+    App\DojoManager\dojo_data\
+- Database for NetBeans / bat is here:
+    DojoManager\dojo_data\
+
+Also read OPEN_ME_FIRST.txt in the project root.
+
+
+THAT'S IT
+---------
+Pull -> open the EXE -> show dojo_data if they ask
+where the database is.

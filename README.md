@@ -1,5 +1,8 @@
 # Dojo Manager — PAT Project Guide (READ ME FIRST)
 
+**Presenting soon?** Open **[`HOW_TO_PULL_AND_RUN.txt`](HOW_TO_PULL_AND_RUN.txt)**  
+for the exact laptop steps: pull → check database → run the EXE.
+
 This is a plain-English guide to the whole PAT project: what it is, how the
 program is built, how it works, and what is still left to finish. Read it
 top-to-bottom — it also doubles as **interview preparation**,
