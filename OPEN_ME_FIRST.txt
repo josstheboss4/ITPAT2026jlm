@@ -20,3 +20,16 @@ FOR SCHOOL / NETBEANS (source code):
 
 If NetBeans gives errors, still use the App\DojoManager\DojoManager.exe
 to show the working program.
+
+
+WHERE IS THE DATABASE / TEST DATA?
+Open the folder:
+  DojoManager\dojo_data\
+
+Those three files ARE the program's database (secondary storage):
+  students.dat   - sample students (test data)
+  classes.dat    - sample class timetable (test data)
+  dojo_info.dat  - dojo name / address / contact
+
+When you run the program, it loads from this folder and saves
+any changes back into the same files automatically.

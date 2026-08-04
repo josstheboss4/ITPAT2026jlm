@@ -2,8 +2,11 @@
 DojoManager/build/
 DojoManager/dist/
 DojoManager/nbproject/private/
-DojoManager/dojo_data/
 *.class
+
+# Keep dojo_data/*.dat in the repo (sample test / database files).
+# Ignore export reports generated when she clicks Export.
+DojoManager/dojo_data/*.txt
 
 # OS / editor junk
 .DS_Store
@@ -13,4 +16,3 @@ Thumbs.db
 
 packaging/
 DojoManager/build/
-

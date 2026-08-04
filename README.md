@@ -28,7 +28,7 @@ window.
 PAT project/
 ├── DojoManager/                      ← the actual program (Java code)
 │   ├── src/dojomanager/              ← all the source code
-│   ├── dojo_data/                    ← saved data (created when you run it)
+│   ├── dojo_data/                    ← DATABASE / test data (.dat files)
 │   └── Start Dojo Manager.bat        ← quick way to run the program
 │
 ├── Specifications Document (.md / .pdf / .docx)   ← PAT Section 1 (15 marks)
@@ -52,8 +52,9 @@ PAT project/
 1. File → Open Project → choose the `DojoManager` folder.
 2. Right-click `DojoManagerApp.java` → **Run File** (or press the green ▶).
 
-The first time it runs, it fills in some sample students and classes so the
-screens aren't empty. All data is saved into the `DojoManager/dojo_data` folder.
+All data is saved into the **`DojoManager/dojo_data`** folder — that folder
+**is the database / test data**. It already contains sample students and
+classes so the screens are not empty when you open the program.
 
 ---
 
@@ -129,15 +130,20 @@ always ask `DataManager` to do it.**
 
 ---
 
-## 5. How the data is stored
+## 5. How the data is stored (the database / test data)
 
-Data is saved **locally** (on the dojo's own computer) in the
-`DojoManager/dojo_data` folder, in three files:
+If you are looking for the **database** or **test data**, open:
+
+**`DojoManager/dojo_data/`**
+
+Data is saved **locally** (on the dojo's own computer) in that folder, in
+three files. These `.dat` files **are** the program's secondary storage
+(the "database"):
 
 | File | Holds |
 |---|---|
-| `students.dat` | The list of all students |
-| `classes.dat` | The list of all classes |
+| `students.dat` | The list of all students (sample test data included) |
+| `classes.dat` | The list of all classes (sample test data included) |
 | `dojo_info.dat` | The single dojo details record |
 
 The program can also **export** two readable text reports into the same folder

@@ -10,7 +10,7 @@ students and class schedules.
 | **Home** | Welcome screen with student and class counts |
 | **Students** | Add, edit, delete students (name, age, belt, phone, email) |
 | **Class Schedule** | Add, edit, delete classes (day, time, instructor, belt level) |
-| **Saving** | Data is saved automatically to files in a `dojo_data` folder |
+| **Saving** | Data is saved automatically to the `dojo_data` folder (this is the database) |
 
 ## How to open in NetBeans (after cloning)
 
@@ -51,8 +51,21 @@ DojoManager
 │       ├── HomePanel.java       ← home screen
 │       ├── StudentPanel.java    ← students GUI
 │       └── SchedulePanel.java   ← schedule GUI
-└── dojo_data/                   ← created when you run (saved data)
+└── dojo_data/                   ← DATABASE / test data (students.dat, classes.dat, dojo_info.dat)
 ```
+
+## Where is the database / test data?
+
+Open **`dojo_data/`** inside this folder. The three `.dat` files are the
+program's secondary storage:
+
+| File | What it is |
+|------|------------|
+| `students.dat` | Sample students (test data) |
+| `classes.dat` | Sample class timetable (test data) |
+| `dojo_info.dat` | Dojo name, address, contact |
+
+The program loads from these files on start and saves changes back into them.
 
 ## Ideas for your PAT document
 
