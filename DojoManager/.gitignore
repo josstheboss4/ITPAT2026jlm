@@ -2,6 +2,7 @@
 /dist/
 /nbproject/private/
 *.class
-# Keep dojo_data/*.dat in the repo (sample test / database files)
-/dojo_data/*.txt
+# Keep dojo_data sample database files in the repo
+/dojo_data/student_list.txt
+/dojo_data/class_timetable.txt
 # Keep DojoManager.jar in the repo so she can run without compiling

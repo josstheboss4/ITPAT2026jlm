@@ -33,7 +33,8 @@ That means an old/broken NetBeans build file is on the laptop. Fix it like this:
 
 ### Quick run without NetBeans
 
-Double-click **`Start Dojo Manager.bat`** (needs Java installed and on PATH).
+- Double-click **`Start Dojo Manager.bat`** (needs Java installed and on PATH), or
+- Use **`App\DojoManager\DojoManager.exe`** (no Java install needed).
 
 ## Project structure (for your write-up)
 

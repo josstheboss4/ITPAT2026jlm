@@ -2,7 +2,7 @@
   HOW TO USE THIS PROJECT
 ========================================
 
-TO RUN THE APP (easiest):
+TO RUN THE APP (easiest — for presenting):
 1. Open the "App" folder
 2. Open the "DojoManager" folder inside it
 3. Double-click DojoManager.exe
@@ -18,18 +18,31 @@ FOR SCHOOL / NETBEANS (source code):
    (the one with src, nbproject, etc.)
 4. Press Run
 
-If NetBeans gives errors, still use the App\DojoManager\DojoManager.exe
+OR double-click:
+  DojoManager\Start Dojo Manager.bat
+  (needs Java installed)
+
+If NetBeans gives errors, still use App\DojoManager\DojoManager.exe
 to show the working program.
 
 
 WHERE IS THE DATABASE / TEST DATA?
-Open the folder:
+================================
+
+Those .dat files ARE the database (secondary storage).
+Sample test data is already included so screens are not empty.
+
+If you run the EXE (recommended for presenting):
+  App\DojoManager\dojo_data\
+
+If you run from NetBeans / the .bat:
   DojoManager\dojo_data\
 
-Those three files ARE the program's database (secondary storage):
+Files in that folder:
   students.dat   - sample students (test data)
   classes.dat    - sample class timetable (test data)
   dojo_info.dat  - dojo name / address / contact
+  README.txt     - short reminder of what this folder is
 
 When you run the program, it loads from this folder and saves
 any changes back into the same files automatically.

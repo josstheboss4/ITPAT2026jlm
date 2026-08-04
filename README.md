@@ -52,9 +52,12 @@ PAT project/
 1. File → Open Project → choose the `DojoManager` folder.
 2. Right-click `DojoManagerApp.java` → **Run File** (or press the green ▶).
 
-All data is saved into the **`DojoManager/dojo_data`** folder — that folder
-**is the database / test data**. It already contains sample students and
-classes so the screens are not empty when you open the program.
+All data is saved into a **`dojo_data`** folder — that folder
+**is the database / test data**. Sample students and classes are already
+included so the screens are not empty.
+
+- NetBeans / `.bat` run: `DojoManager/dojo_data/`
+- Double-click EXE: `App/DojoManager/dojo_data/`
 
 ---
 

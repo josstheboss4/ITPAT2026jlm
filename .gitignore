@@ -5,8 +5,11 @@ DojoManager/nbproject/private/
 *.class
 
 # Keep dojo_data/*.dat in the repo (sample test / database files).
-# Ignore export reports generated when she clicks Export.
-DojoManager/dojo_data/*.txt
+# Ignore only the export reports created when she clicks Export.
+DojoManager/dojo_data/student_list.txt
+DojoManager/dojo_data/class_timetable.txt
+App/DojoManager/dojo_data/student_list.txt
+App/DojoManager/dojo_data/class_timetable.txt
 
 # OS / editor junk
 .DS_Store
